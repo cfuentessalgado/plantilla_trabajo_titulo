@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+% \usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+%\usepackage{cite}
+%\usepackage{times}
+\usepackage{parskip}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{float}
+%\usepackage[fixlanguage]{babelbib}
+%\selectbiblanguage{spanish}
+%\usepackage{todonotes}
+\usepackage{graphicx}
+\newcommand{\sectionbreak}{\clearpage}
+%\renewcommand{\baselinestretch}{2.0}
+
+    
+\usepackage[
+backend=biber,
+style=ieee,
+]{biblatex}
+\addbibresource{mybib.bib} 
+
+%\setlength{\parindent}{0 pt}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Large}
+\begin{document}
+
+%\maketitle
+\begin{titlepage}
+        \vspace{-1.0cm}
+       \includegraphics[width=0.6\textwidth]{images/LOGO.jpg}
+   \begin{center}
+       \vspace*{2cm}
+
+       \textbf{TITULO DEL DOCUMENTO}
+
+       \vspace{0.5cm}
+       \vspace{4cm}
+        por\\
+       \textbf{Autor}
+
+       \vfill
+            Trabajo de Título presentado a la\\
+Facultad de Ingeniería de la Universidad Católica de Temuco\\
+Para Optar al Título de Ingeniero Civil Informático.
+            
+       %\vspace{0.8cm}
+     
+            
+       \textbf{- Temuco, 2021 -}
+      \vspace{-1cm}
+            
+   \end{center}
+\end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+\listoftables
+\listoffigures
+\begin{doublespace}
+\doublespacing
+\section{Resumen}
+\section{Abstract}
+\section{Introducción}
+\section{Objetivos}
+\subsection{Objetivo General}
+%Implementar un sistema de intranet que soporte los procesos de gestión y comunicación de la empresa.
+\subsection{Objetivos Específicos}
+
+\section{Marco Teórico}
+
+\section{Metodología}
+
+\subsection{Herramientas y Tecnologías}
+
+\subsection{Pruebas}
+
+\section{Análisis y Requerimientos}
+
+\section{Implementación}
+
+\section{Resultados}
+
+\section{Conclusiones}
+
+
+
+\end{doublespace}
+\printbibliography
+\appendix
+\section{Apéndice}
+\input{apendix.tex}
+\end{document}
